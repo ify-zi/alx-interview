@@ -1,24 +1,16 @@
 #!/usr/bin/python3
-""" function that check if a key can unlock all box"""
+"""Script will unlock list of lists"""
 
 
 def canUnlockAll(boxes):
-    """ lockbox algorithm """
-    length = len(boxes)
-    i = 0
-    opened = []
-    keyVal = len(boxes[0])
-    while i <= length:
-        for box in boxes:
-            key = len(box)
-            if key <= keyVal:
-                opened.append('True')
-            else:
-                opened.append('False')
-        i += 1
+    """lockbox algo
+    """
 
-    for bool in opened:
-        if bool == 'False':
-            return False
-
-    return True
+    keys = [0]
+    for key in keys:
+        for boxKey in boxes[key]:
+            if boxKey not in keys and boxKey < len(boxes):
+                keys.append(boxKey)
+    if len(keys) == len(boxes):
+        return True
+    return False
