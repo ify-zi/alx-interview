@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ function that check if a key can unlock all box"""
 
+
 def canUnlockAll(boxes):
     """ lockbox algorithm """
     length = len(boxes)
