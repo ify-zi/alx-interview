@@ -9,12 +9,8 @@ def minOperations(n):
 
     if n is None or n < 1:
         return 0
-
-
     operations = 0
     factors = 2
-
-
     while factors <= n:
         while n % factors == 0:
             operations += factors
