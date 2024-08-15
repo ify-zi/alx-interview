@@ -2,10 +2,8 @@
 """2D matrix rotation module.
 """
 
-from typing import List
 
-
-def rotate_2d_matrix(matrix: List[list]) -> None:
+def rotate_2d_matrix(matrix: list):
     """Rotates an m by n 2D matrix in place.
     """
     if type(matrix) != list:
