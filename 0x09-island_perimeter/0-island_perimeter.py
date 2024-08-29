@@ -3,6 +3,7 @@
     Island perimeter algorithm
 """
 
+
 def island_perimeter(grid):
     """Computes the perimeter of an island with no lakes.
     """
